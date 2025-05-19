@@ -107,6 +107,9 @@ internal class AndroidARView(
                                 result.error("Error", "could not get camera pose", null)
                             }
                         }
+                        "placeGeospatial" -> {
+
+                        }
                         "placeBasedOnCoordinates" -> {
                             if (call.arguments is Map<*,*>) {
                                 val cpuCoordinates = floatArrayOf((call.arguments as Map<*, *>)['x'] as Float, (call.arguments as Map<*, *>)['y'] as Float)
